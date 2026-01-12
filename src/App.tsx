@@ -31,7 +31,7 @@ function App() {
       </main>
 
       <footer>
-        <p>&copy; 2026 Determinism Game</p>
+        <p>&copy; 2026 ohno! games</p>
       </footer>
     </div>
   )
