@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "scenario": "Calculating employee payroll based on fixed hourly rates and logged hours",
+    "correctAnswer": "Deterministic",
+    "explanation": "This is deterministic because the calculation follows a fixed formula (hours × rate = pay). The same inputs always produce the same output. AI is not needed here - traditional software handles this perfectly with 100% accuracy and reliability."
+  },
+  {
+    "id": 2,
+    "scenario": "Analyzing customer sentiment from product reviews to identify emerging concerns",
+    "correctAnswer": "Non-Deterministic",
+    "explanation": "This is non-deterministic because human language is ambiguous and contextual. Sentiment can vary based on interpretation, cultural context, and subtle nuances. AI excels here because it can learn patterns from vast amounts of text data that would be impractical to program explicitly."
+  },
+  {
+    "id": 3,
+    "scenario": "Validating credit card numbers using the Luhn algorithm",
+    "correctAnswer": "Deterministic",
+    "explanation": "This is deterministic - the Luhn algorithm is a mathematical formula with exact steps. Every credit card number will always produce the same validation result. This is a perfect case for traditional programming; AI would be overkill and less reliable."
+  },
+  {
+    "id": 4,
+    "scenario": "Recommending personalized product suggestions based on browsing history and user behavior",
+    "correctAnswer": "Non-Deterministic",
+    "explanation": "This is non-deterministic because user preferences are complex and influenced by many subtle factors. There's no single 'correct' recommendation - different approaches might work equally well. AI can discover hidden patterns in user behavior that would be nearly impossible to code manually."
+  },
+  {
+    "id": 5,
+    "scenario": "Converting temperature from Celsius to Fahrenheit",
+    "correctAnswer": "Deterministic",
+    "explanation": "This is deterministic - there's an exact formula (F = C × 9/5 + 32). Every Celsius value maps to exactly one Fahrenheit value. Using AI here would be wasteful and potentially introduce unnecessary errors where none should exist."
+  },
+  {
+    "id": 6,
+    "scenario": "Transcribing speech from diverse speakers with different accents and background noise",
+    "correctAnswer": "Non-Deterministic",
+    "explanation": "This is non-deterministic because human speech varies enormously. Accents, pronunciation, context, and audio quality all affect interpretation. AI models trained on massive speech datasets can handle this variability far better than rule-based systems."
+  },
+  {
+    "id": 7,
+    "scenario": "Sorting a list of numbers from smallest to largest",
+    "correctAnswer": "Deterministic",
+    "explanation": "This is deterministic - sorting algorithms have exact steps and always produce the same ordered result for the same input. This is a fundamental computer science operation that traditional algorithms handle perfectly. AI would add no value here."
+  },
+  {
+    "id": 8,
+    "scenario": "Detecting fraudulent transactions based on unusual patterns and behaviors",
+    "correctAnswer": "Non-Deterministic",
+    "explanation": "This is non-deterministic because fraud patterns evolve and new schemes emerge constantly. What constitutes 'unusual' is context-dependent and changes over time. AI can learn from historical fraud cases and adapt to new patterns without explicit reprogramming."
+  },
+  {
+    "id": 9,
+    "scenario": "Checking if a password meets complexity requirements (length, special characters, numbers)",
+    "correctAnswer": "Deterministic",
+    "explanation": "This is deterministic - password validation follows explicit rules that can be checked programmatically. Either the password meets the criteria or it doesn't. Traditional validation logic is faster, more reliable, and more transparent than using AI."
+  },
+  {
+    "id": 10,
+    "scenario": "Translating text between human languages while preserving meaning and tone",
+    "correctAnswer": "Non-Deterministic",
+    "explanation": "This is non-deterministic because languages don't map directly to each other. Idioms, cultural context, and multiple valid translations make this complex. AI models trained on parallel texts can capture these nuances better than rule-based translation systems."
+  },
+  {
+    "id": 11,
+    "scenario": "Calculating compound interest over time with a fixed rate",
+    "correctAnswer": "Deterministic",
+    "explanation": "This is deterministic - compound interest follows a precise mathematical formula. Given principal, rate, and time, the result is always the same. This is basic arithmetic that traditional programming handles perfectly."
+  },
+  {
+    "id": 12,
+    "scenario": "Identifying objects and people in photographs for automatic tagging",
+    "correctAnswer": "Non-Deterministic",
+    "explanation": "This is non-deterministic because visual recognition involves interpretation. Lighting, angles, partial occlusion, and context all affect what we 'see'. AI trained on millions of images can recognize patterns that would require impossibly complex rules to code manually."
+  },
+  {
+    "id": 13,
+    "scenario": "Determining if a year is a leap year",
+    "correctAnswer": "Deterministic",
+    "explanation": "This is deterministic - leap year rules are exact: divisible by 4, except centuries unless divisible by 400. Every year has one correct answer. This is a simple conditional logic problem that doesn't benefit from AI."
+  },
+  {
+    "id": 14,
+    "scenario": "Predicting which customers are likely to cancel their subscription next month",
+    "correctAnswer": "Non-Deterministic",
+    "explanation": "This is non-deterministic because human behavior is complex and probabilistic. Multiple factors influence churn, and patterns aren't absolute. AI can find correlations in historical data that help predict risk, even though individual predictions are never certain."
+  },
+  {
+    "id": 15,
+    "scenario": "Parsing JSON data and extracting specific fields",
+    "correctAnswer": "Deterministic",
+    "explanation": "This is deterministic - JSON has a defined structure and parsing rules. A valid JSON document will always parse the same way. Traditional parsers are faster, more reliable, and don't require training data like AI approaches."
+  }
+]

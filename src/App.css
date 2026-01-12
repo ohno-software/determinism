@@ -1,0 +1,273 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace;
+  background-color: #0a0a0a;
+  color: #00ff41;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem;
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #00ff41;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.subtitle {
+  color: #008f11;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.powered-by {
+  color: #ff00ff;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+.start-button {
+  background: #1a1a1a;
+  border: 2px solid #00ff41;
+  color: #00ff41;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.start-button:hover {
+  background: #00ff41;
+  color: #0a0a0a;
+  box-shadow: 0 0 20px #00ff41;
+  transform: scale(1.05);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.scenario-display {
+  font-size: 1.3rem;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  width: 100%;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .scenario-display {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+.choices-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .choices-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.choice-button {
+  background: #1a1a1a;
+  border: 2px solid #00ff41;
+  color: #00ff41;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+  font-size: 1.1rem;
+  min-width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.choice-button:hover {
+  background: #00ff41;
+  color: #0a0a0a;
+  box-shadow: 0 0 15px #00ff41;
+  transform: scale(1.05);
+}
+
+.choice-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.choice-button:disabled:hover {
+  background: #1a1a1a;
+  color: #00ff41;
+  transform: none;
+  box-shadow: none;
+}
+
+.feedback-container {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  background: #1a1a1a;
+  border: 2px solid;
+  box-sizing: border-box;
+}
+
+.feedback-container.correct {
+  border-color: #00ff41;
+  background: rgba(0, 255, 65, 0.1);
+}
+
+.feedback-container.incorrect {
+  border-color: #ff0000;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.feedback-result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.feedback-container.correct .feedback-result {
+  color: #00ff41;
+}
+
+.feedback-container.incorrect .feedback-result {
+  color: #ff0000;
+}
+
+.feedback-explanation {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #00ff41;
+  margin-bottom: 1.5rem;
+}
+
+.next-button {
+  background: transparent;
+  border: 1px solid #00ff41;
+  color: #00ff41;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.next-button:hover {
+  background: #00ff41;
+  color: #0a0a0a;
+}
+
+.score-display {
+  font-size: 1.2rem;
+  color: #ff00ff;
+  margin-bottom: 1rem;
+}
+
+.progress-display {
+  font-size: 1rem;
+  color: #008f11;
+  margin-bottom: 1rem;
+}
+
+.game-finished {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  background: #1a1a1a;
+  border: 2px solid #00ff41;
+  border-radius: 8px;
+}
+
+.game-finished h2 {
+  font-size: 2.5rem;
+  color: #00ff41;
+  text-shadow: 0 0 10px #00ff41;
+  margin: 0;
+}
+
+.final-score {
+  font-size: 1.8rem;
+  color: #ff00ff;
+}
+
+.restart-button {
+  background: #1a1a1a;
+  border: 2px solid #00ff41;
+  color: #00ff41;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.restart-button:hover {
+  background: #00ff41;
+  color: #0a0a0a;
+  box-shadow: 0 0 15px #00ff41;
+}
+
+footer {
+  margin-top: 3rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #00ff41;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
