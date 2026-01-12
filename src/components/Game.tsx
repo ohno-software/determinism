@@ -14,7 +14,7 @@ const Game: React.FC<GameProps> = ({ onRestart }) => {
   const [isFinished, setIsFinished] = useState(false)
 
   useEffect(() => {
-    fetch('/scenarios.json')
+    fetch('./scenarios.json')
       .then((res) => res.json())
       .then((data) => {
         // Shuffle scenarios
